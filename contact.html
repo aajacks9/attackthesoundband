@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Attack the Sound::Contact</title>
+	  <link rel="stylesheet" type="text/css" href="ats.css" />
+	  <link href="media/favicon.ico" rel="icon" type="image/x-icon"/> 
+	 <script type="text/javascript">
+function checkform() {
+
+  //coded by Marcus
+
+   var frm = document.getElementById("booking");
+   var formComplete = true; //boolean var
+
+   if (frm.firstname.value == "" ){
+      document.getElementById("firstname_error").innerHTML = " Your first name is required!";
+     formComplete = false;
+  }else document.getElementById("firstname_error").innerHTML = "";
+  
+  if (frm.lastname.value == "" ){
+      document.getElementById("lastname_error").innerHTML = " Your last name is required!";
+     formComplete = false;
+  }else document.getElementById("lastname_error").innerHTML = "";
+  
+   if (frm.email.value.indexOf ('@', 0) == -1 || frm.email.value.length < 5 ){
+   	document.getElementById("email_error").innerHTML = " Your email is required!";
+   	formComplete = false ;
+   } else document.getElementById("email_error").innerHTML = "";
+
+   if (frm.topic.value == "" ){
+   	document.getElementById("topic_error").innerHTML = " A topic is required!";
+   	formComplete = false ;
+   } else document.getElementById("topic_error").innerHTML = "";
+
+	if(formComplete == true) {
+  alert ("Your form is complete");
+  return true ;
+  }
+	else {
+		return false;
+		}
+}
+
+</script>
+   </head>
+  
+  <!--coded by Mitch-->
+
+   <body>
+    <div id="container">
+		<header>
+			<div id="logo">
+				<a href="http://www.attackthesound.com">
+					<img src="media/logo_white.png" alt="Attack the Sound Logo" width="140" height= "140"/>
+				</a>
+			</div>
+		
+		</header>
+		<nav>
+		  <ul>
+		    <li><a href="atsindex.html">HOME</a></li> 
+		    <li><a href="about.html">ABOUT</a></li> 
+	     	<li><a href="shows.html">SHOWS</a></li> 
+			<li><a href="news.html">NEWS</a></li> 
+			<li><a href="contact.html">CONTACT</a></li> 
+			<li><a href="store.html">STORE</a></li> 
+		  </ul>
+		</nav>
+	</div>	
+    <div id="contactform">
+    <div id="contactmargin">
+     <br/><p>For booking, media inquiries, or to show the band some love, 
+     use the contact from below, or send an e-mail to attackthesound@yahoo.com
+     including the information listed below.</p><br/><br />
+     
+     <form method="get" action="mailto:attackthesound@yahoo.com" id="contact_form">
+     <table id="form_titles">
+      
+       <tr>
+         <td>First Name*:</td>
+         <td><input type="text"></td>
+       </tr>  
+      
+       <tr>
+         <td>Last Name*:</td>
+         <td><input type="text"></td>
+       </tr>  
+       
+       <tr>
+         <td>Email*:</td>
+         <td><input type="text"></td>
+       </tr>  
+       
+        <tr>
+         <td>Topic*:</td>
+         <td><textarea></textarea></td>
+       </tr> 
+       
+        <tr>
+         <td>More Info:</td>
+         <td><textarea></textarea></td>
+       </tr>   
+       
+     </table>
+       <br />
+       <button type="submit" value="Submit">Submit</button>
+       <button type="reset" value="Reset">Cancel</button>
+     </form> 
+   </div>  
+   </div>    
+   </body>
+   
+<br>
+
+
+<footer>
+	 	
+	 	<ul>
+				<li><a href="https://www.facebook.com/AttacktheSound/">
+				<img src="media/facebook_logo.png" alt="Facebook" width="40" height= "40"/></a></li> 
+				 <li><a href="https://snapchat.com">
+				 <img src="media/snapchat_logo.png" alt="Snapchat" width="40" height= "40"/></a></li> 
+				 <li><a href="https://www.instagram.com/attackthesound/?hl=en">
+				 <img src="media/instagram_logo.png" alt="Instagram" width="40" height= "40"/></a></li> 
+				<li><a href="https://soundcloud.com/attackthesound">
+				<img src="media/soundcloud_logo.png" alt="Soundcloud" width="40" height= "40"/></a></li> 
+				<li><a href="https://www.youtube.com/user/AttacktheSound">
+				<img src="media/youtube_logo.png" alt="Youtube" width="40" height= "40"/></a></li> 
+			</ul>
+		
+
+</footer>
+</html>
