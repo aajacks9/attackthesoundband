@@ -402,7 +402,16 @@ width:140px;
 
 
 
-						/*----------------media-ashley---------------*/
+						/*----------------news-ashley---------------*/
+
+#voice {
+
+margin:auto;
+display:block;
+
+
+
+}
 
 
 #news_table tr {
